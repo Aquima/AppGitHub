@@ -32,9 +32,10 @@ class LogInViewController: UIViewController {
         NotificationCenter.default.addObserver(self, selector: #selector(self.goToDetail(notification:)), name: Notification.Name("loginCompleted"), object: nil)
     }
     @objc func goToDetail(notification: Notification){
+
         let objJSON = notification.object!
         DispatchQueue.main.async{
-            let viewDetail = UIViewController()
+            let viewDetail = ViewController()// debio ser asi
             self.present(viewDetail, animated: true, completion: {
                 
             })
@@ -59,11 +60,8 @@ class LogInViewController: UIViewController {
                 let jsonResult = try JSONSerialization.jsonObject(with: data, options:
                     JSONSerialization.ReadingOptions.mutableContainers)
                 print(jsonResult)
-              
-                      NotificationCenter.default.post(name: Notification.Name("loginCompleted"), object: jsonResult)
-                
-              
-                
+                NotificationCenter.default.post(name: Notification.Name("loginCompleted"), object: jsonResult)
+   
             } catch let err {
                 
             }
