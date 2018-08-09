@@ -12,6 +12,7 @@
 		CE8C15FE211CA343008B05B1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE8C15FC211CA343008B05B1 /* Main.storyboard */; };
 		CE8C1600211CA350008B05B1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE8C15FF211CA350008B05B1 /* Assets.xcassets */; };
 		CE8C1603211CA350008B05B1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE8C1601211CA350008B05B1 /* LaunchScreen.storyboard */; };
+		CE8C160B211CA928008B05B1 /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8C160A211CA928008B05B1 /* LogInViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		CE8C15FF211CA350008B05B1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CE8C1602211CA350008B05B1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CE8C1604211CA350008B05B1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE8C160A211CA928008B05B1 /* LogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 				CE8C15FF211CA350008B05B1 /* Assets.xcassets */,
 				CE8C1601211CA350008B05B1 /* LaunchScreen.storyboard */,
 				CE8C1604211CA350008B05B1 /* Info.plist */,
+				CE8C160A211CA928008B05B1 /* LogInViewController.swift */,
 			);
 			path = AppGitHub;
 			sourceTree = "<group>";
@@ -137,6 +140,7 @@
 			files = (
 				CE8C15FB211CA343008B05B1 /* ViewController.swift in Sources */,
 				CE8C15F9211CA343008B05B1 /* AppDelegate.swift in Sources */,
+				CE8C160B211CA928008B05B1 /* LogInViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -290,7 +294,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.tcs.AppGitHub;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -308,7 +312,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.tcs.AppGitHub;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
